@@ -1,22 +1,18 @@
+Build.PL
 Changes
-const-c.inc
-const-xs.inc
-Cryptoki.xs
-cryptoki/cryptoki.h
-cryptoki/pkcs-11v2-20.pdf
-cryptoki/pkcs11.h
-cryptoki/pkcs11f.h
-cryptoki/pkcs11t.h
-fallback/const-c.inc
-fallback/const-xs.inc
-FunctionList.xs
-lib/Cryptoki.pm
-Makefile.PL
-MANIFEST
-ppport.h
+include/cryptoki/cryptoki.h
+include/cryptoki/pkcs-11v2-20.pdf
+include/cryptoki/pkcs11.h
+include/cryptoki/pkcs11f.h
+include/cryptoki/pkcs11t.h
+include/ppport.h
+lib/Crypt/Cryptoki.pm
+MANIFEST			This list of files
+META.json
+META.yml
 README.pod
+src/Crypt-Cryptoki-FunctionList.xs
+src/Crypt-Cryptoki.xs
 t/cryptoki.t
 t/softhsm.t
 typemap
-META.yml                                 Module YAML meta-data (added by MakeMaker)
-META.json                                Module JSON meta-data (added by MakeMaker)
