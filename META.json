@@ -30,7 +30,7 @@
    "provides" : {
       "Crypt::Cryptoki" : {
          "file" : "lib/Crypt/Cryptoki.pm",
-         "version" : "0.01_05"
+         "version" : "0.01_06"
       }
    },
    "release_status" : "testing",
@@ -39,5 +39,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "0.01_05"
+   "version" : "0.01_06"
 }
