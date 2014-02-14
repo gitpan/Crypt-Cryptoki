@@ -1,6 +1,6 @@
 package Crypt::Cryptoki;
 
-use 5.018002;
+use 5.012005;
 use strict;
 use warnings;
 use Carp;
@@ -90,7 +90,7 @@ our %EXPORT_TAGS = ( 'all' => [ qw(
 
 our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 
-our $VERSION = '0.01_06';
+our $VERSION = '0.01_07';
 
 sub AUTOLOAD {
     # This AUTOLOAD is used to 'autoload' constants from the constant()
@@ -301,7 +301,7 @@ Markus Lauer, E<lt>mlarue@cpan.orgE<gt>
 Copyright (C) 2014 by Markus Lauer
 
 This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself, either Perl version 5.18.2 or,
+it under the same terms as Perl itself, either Perl version 5.12.5 or,
 at your option, any later version of Perl 5 you may have available.
 
 
