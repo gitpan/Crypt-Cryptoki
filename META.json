@@ -4,7 +4,7 @@
       "Markus Lauer, E<lt>mlarue@cpan.orgE<gt>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.4003, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Module::Build version 0.4205",
    "license" : [
       "perl_5"
    ],
@@ -16,6 +16,7 @@
    "prereqs" : {
       "build" : {
          "requires" : {
+            "Devel::PPPort" : "0",
             "ExtUtils::CBuilder" : "0",
             "ExtUtils::Constant" : "0",
             "ExtUtils::ParseXS" : "0"
@@ -28,14 +29,68 @@
       },
       "runtime" : {
          "requires" : {
-            "perl" : "v5.12.5"
+            "perl" : "v5.14.0"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "Crypt::OpenSSL::Bignum" : "0",
+            "Crypt::OpenSSL::RSA" : "0"
          }
       }
    },
    "provides" : {
       "Crypt::Cryptoki" : {
          "file" : "lib/Crypt/Cryptoki.pm",
-         "version" : "0.01_07"
+         "version" : "0.01_08"
+      },
+      "Crypt::Cryptoki::Constant" : {
+         "file" : "lib/Crypt/Cryptoki/Constant.pm"
+      },
+      "Crypt::Cryptoki::Key" : {
+         "file" : "lib/Crypt/Cryptoki/Key.pm"
+      },
+      "Crypt::Cryptoki::Object" : {
+         "file" : "lib/Crypt/Cryptoki/Object.pm"
+      },
+      "Crypt::Cryptoki::PrivateKey" : {
+         "file" : "lib/Crypt/Cryptoki/PrivateKey.pm"
+      },
+      "Crypt::Cryptoki::PublicKey" : {
+         "file" : "lib/Crypt/Cryptoki/PublicKey.pm"
+      },
+      "Crypt::Cryptoki::Raw" : {
+         "file" : "lib/Crypt/Cryptoki/Raw.pm"
+      },
+      "Crypt::Cryptoki::Session" : {
+         "file" : "lib/Crypt/Cryptoki/Session.pm"
+      },
+      "Crypt::Cryptoki::Slot" : {
+         "file" : "lib/Crypt/Cryptoki/Slot.pm"
+      },
+      "Crypt::Cryptoki::SlotWithToken" : {
+         "file" : "lib/Crypt/Cryptoki/SlotWithToken.pm"
+      },
+      "Crypt::Cryptoki::Template" : {
+         "file" : "lib/Crypt/Cryptoki/Template.pm"
+      },
+      "Crypt::Cryptoki::Template::Key" : {
+         "file" : "lib/Crypt/Cryptoki/Template/Key.pm"
+      },
+      "Crypt::Cryptoki::Template::PrivateKey" : {
+         "file" : "lib/Crypt/Cryptoki/Template/PrivateKey.pm"
+      },
+      "Crypt::Cryptoki::Template::PublicKey" : {
+         "file" : "lib/Crypt/Cryptoki/Template/PublicKey.pm"
+      },
+      "Crypt::Cryptoki::Template::RSAPrivateKey" : {
+         "file" : "lib/Crypt/Cryptoki/Template/RSAPrivateKey.pm"
+      },
+      "Crypt::Cryptoki::Template::RSAPublicKey" : {
+         "file" : "lib/Crypt/Cryptoki/Template/RSAPublicKey.pm"
+      },
+      "Crypt::Cryptoki::Template::Storage" : {
+         "file" : "lib/Crypt/Cryptoki/Template/Storage.pm"
       }
    },
    "release_status" : "testing",
@@ -44,5 +99,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "0.01_07"
+   "version" : "0.01_08"
 }
